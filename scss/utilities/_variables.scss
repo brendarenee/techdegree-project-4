@@ -1,0 +1,33 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$main-font: 'Montserrat', sans-serif;
+
+// Breakpoints
+
+
+// Colors
+$main-font-color: #837f7e;
+$secondary-font-color: #3ee9b3;
+$tertiary-font-color: #45e8f5;
+
+$white: white;
+
+// Maps
+
+$button-color: (
+  default: $tertiary-font-color,
+  success: $secondary-font-color,
+    error: #ff8344, // orange
+  warning: #ffa41c, // yellow
+     info: #742cab, // purple
+);
+
+$grid-colors: (
+  12: #d6ac9d, //mauve
+   6: #69b49d, //seafoam green
+   4: #e7e7c5, //yellow beige
+   3: #699fb4, //soft blue
+   5: #a097c7, //lavender
+   7: #d4b298, //taupe
+   8: #81a499, //light olive green
+);

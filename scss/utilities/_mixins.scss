@@ -1,0 +1,18 @@
+@mixin apply-backgrounds($color-map, $align-text) {
+
+    @each $key, $color in $color-map {
+
+      &--#{$key}.theme__colors {
+        background-color: $color;
+        border-radius: 5px;
+        padding: 15px 20px;
+        font-weight: bold;
+        text-align: $align-text;
+      }
+    }
+}
+
+
+// Media Queries
+
+//Flexbox Settings

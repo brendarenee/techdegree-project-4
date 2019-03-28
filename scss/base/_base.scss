@@ -1,0 +1,16 @@
+// Apply styles ONLY to the following elements:
+
+// * universal selector
+
+// p elements
+p {
+  line-height: 1.8;
+}
+// ul elements
+ul {
+  list-style-type: none;
+}
+// a elements
+a {
+  @extend %link;
+}

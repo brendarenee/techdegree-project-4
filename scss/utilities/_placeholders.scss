@@ -1,0 +1,23 @@
+// Links
+%link {
+  text-decoration: none;
+  color: inherit;
+}
+// Images
+
+// Nav Items
+%nav-style {
+  padding: 15px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  &:hover {
+    color: $white;
+    background-color: $secondary-font-color;
+  }
+}
+
+%align-left {
+  text-align: left;
+  margin-bottom: 30px;
+  display: block;
+}
