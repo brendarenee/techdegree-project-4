@@ -1,6 +1,9 @@
 // Apply styles ONLY to the following elements:
 
 // * universal selector
+* {
+  box-sizing: border-box;
+}
 
 // p elements
 p {

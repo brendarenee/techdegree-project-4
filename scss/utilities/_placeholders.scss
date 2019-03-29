@@ -10,6 +10,7 @@
   padding: 15px 20px;
   font-size: 1.2em;
   border-radius: 5px;
+  text-align: center;
   &:hover {
     color: $white;
     background-color: $secondary-font-color;
@@ -20,4 +21,16 @@
   text-align: left;
   margin-bottom: 30px;
   display: block;
+}
+
+// Buttons
+
+%btn-align {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: none;
+  font-size: 1.2em;
+  color: $white;
+  text-transform: uppercase;
 }

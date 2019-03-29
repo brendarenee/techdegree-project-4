@@ -3,9 +3,16 @@
   @extend %align-left;
 }
 
+.headline--secondary {
+  margin-top: 40px;
+}
+
 .headline--primary {
   @extend %align-left;
   padding-right: 30px;
+  padding-left: 20px;
+  color: $secondary-font-color;
+  font-weight: bold;
 }
 
 .grid__col--8 .link {
@@ -18,6 +25,5 @@
   font-style: italic;
   border-radius: 5px;
   padding-left: 20px;
-  margin-left: 30px;
   border-left: 10px solid $secondary-font-color;
 }

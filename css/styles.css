@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  box-sizing: border-box;
+}
+
 p {
   line-height: 1.8;
 }
@@ -16,6 +20,7 @@ a {
   padding: 15px 20px;
   font-size: 1.2em;
   border-radius: 5px;
+  text-align: center;
 }
 .nav__item:hover {
   color: white;
@@ -27,6 +32,16 @@ a {
   text-align: left;
   margin-bottom: 30px;
   display: block;
+}
+
+.form .btn--default[type=submit], .grid__col--12 button {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: none;
+  font-size: 1.2em;
+  color: white;
+  text-transform: uppercase;
 }
 
 .container {
@@ -225,8 +240,15 @@ a {
   }
 }
 
+.headline--secondary {
+  margin-top: 40px;
+}
+
 .headline--primary {
   padding-right: 30px;
+  padding-left: 20px;
+  color: #3ee9b3;
+  font-weight: bold;
 }
 
 .grid__col--8 .link {
@@ -239,7 +261,6 @@ a {
   font-style: italic;
   border-radius: 5px;
   padding-left: 20px;
-  margin-left: 30px;
   border-left: 10px solid #3ee9b3;
 }
 
@@ -279,64 +300,51 @@ a {
   text-align: center;
 }
 
-.grid__col--12 {
-  display: flex;
-  flex-direction: column;
-}
-.grid__col--12 button {
-  flex-grow: 1;
-  flex-basis: 100%;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  color: white;
+@media (min-width: 768px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.form img {
+.grid__col--12 button {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .grid__col--12 button:not(:last-child) {
+    margin-right: 3%;
+  }
+}
+
+.img--avatar,
+.img--frame,
+.img--logo {
   display: block;
-  margin: 20px auto;
+  margin: 0 auto 30px auto;
   text-align: center;
 }
+
+.img--frame {
+  width: 100%;
+  border: 1px solid #837f7e;
+  padding: 15px;
+}
+
 .form .form__label--hidden {
   display: none;
 }
 .form .form__input {
   display: block;
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  margin: 20px;
+  margin: 30px auto;
   border: none;
   border-bottom: 5px solid #3ee9b3;
 }
 .form .form__input::placeholder {
   font-weight: bold;
   font-size: 1.2em;
-}
-.form .btn--default[type=submit] {
-  display: block;
-  width: 100%;
-  margin: auto;
-  border: none;
-  font-size: 1.2em;
-  color: white;
-  text-transform: uppercase;
-}
-
-.form img {
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-}
-.form .form__label--hidden {
-  display: none;
-}
-.form .form__input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 20px auto;
-  border: none;
-  border-bottom: 5px solid #3ee9b3;
 }
 
 /*# sourceMappingURL=styles.css.map */
