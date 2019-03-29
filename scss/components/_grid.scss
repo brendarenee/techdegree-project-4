@@ -22,18 +22,21 @@
   // .grid__row
   &__row {
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+    @include flex-container(column);
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
       flex-direction: row;
+      // &:last-child {
+      //   justify-content: center;
+      // }
+
     }
   }
 
   // .grid__col
   &__col {
-    @include apply-backgrounds ($grid-colors, left);
+    @include apply-backgrounds ($grid-colors);
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
@@ -55,12 +58,16 @@
 
           // base stlyes applied to all grid columns
           margin-top: 0;
+          text-align: center;
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
         }
 
       }
+    }
+    &--7.centered {
+      margin: 0 auto;
     }
   }
 }

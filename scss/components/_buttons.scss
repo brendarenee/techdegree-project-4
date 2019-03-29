@@ -1,13 +1,5 @@
 .btn {
-  @include apply-backgrounds($button-color, center);
-}
-
-.grid__col--12 {
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  @include apply-backgrounds($button-color);
 }
 
 .grid__col--12 button {
@@ -19,5 +11,12 @@
     @media (min-width: 768px) {
       margin-right: 3%;
     }
+  }
+}
+
+.grid__col--12 {
+  @media (min-width: 768px) {
+    @include flex-container(row);
+    justify-content: space-around;
   }
 }

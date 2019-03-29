@@ -69,49 +69,42 @@ a {
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: left;
 }
 .grid__col--6.theme__colors {
   background-color: #69b49d;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: left;
 }
 .grid__col--4.theme__colors {
   background-color: #e7e7c5;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: left;
 }
 .grid__col--3.theme__colors {
   background-color: #699fb4;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: left;
 }
 .grid__col--5.theme__colors {
   background-color: #a097c7;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: left;
 }
 .grid__col--7.theme__colors {
   background-color: #d4b298;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: left;
 }
 .grid__col--8.theme__colors {
   background-color: #81a499;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: left;
 }
 .grid__col--1 {
   margin-top: 10px;
@@ -120,6 +113,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--1 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 8.3333333333%;
   }
 }
@@ -130,6 +124,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--2 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 16.6666666667%;
   }
 }
@@ -140,6 +135,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--3 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 25%;
   }
 }
@@ -150,6 +146,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--4 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 33.3333333333%;
   }
 }
@@ -160,6 +157,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--5 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 41.6666666667%;
   }
 }
@@ -170,6 +168,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--6 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 50%;
   }
 }
@@ -180,6 +179,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--7 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 58.3333333333%;
   }
 }
@@ -190,6 +190,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--8 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 66.6666666667%;
   }
 }
@@ -200,6 +201,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--9 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 75%;
   }
 }
@@ -210,6 +212,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--10 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 83.3333333333%;
   }
 }
@@ -220,6 +223,7 @@ a {
 @media (min-width: 768px) {
   .grid__col--11 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 91.6666666667%;
   }
 }
@@ -230,8 +234,12 @@ a {
 @media (min-width: 768px) {
   .grid__col--12 {
     margin-top: 0;
+    text-align: center;
     flex-basis: 100%;
   }
+}
+.grid__col--7.centered {
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -269,43 +277,30 @@ a {
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: center;
 }
 .btn--success.theme__colors {
   background-color: #3ee9b3;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: center;
 }
 .btn--error.theme__colors {
   background-color: #ff8344;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: center;
 }
 .btn--warning.theme__colors {
   background-color: #ffa41c;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: center;
 }
 .btn--info.theme__colors {
   background-color: #742cab;
   border-radius: 5px;
   padding: 15px 20px;
   font-weight: bold;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .grid__col--12 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 .grid__col--12 button {
@@ -314,6 +309,14 @@ a {
 @media (min-width: 768px) {
   .grid__col--12 button:not(:last-child) {
     margin-right: 3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -329,6 +332,20 @@ a {
   width: 100%;
   border: 1px solid #837f7e;
   padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .nav__item {
+    flex: 1 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+  }
 }
 
 .form .form__label--hidden {
