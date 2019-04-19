@@ -25,7 +25,7 @@
     @include flex-container(column);
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq (large){
       flex-direction: row;
       // &:last-child {
       //   justify-content: center;
@@ -54,7 +54,7 @@
 
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq (large) {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -66,11 +66,13 @@
 
       }
     }
-    &--7.centered {
-      margin: 0 auto;
-    }
   }
 }
+
+.centered {
+  margin: 0 auto;
+}
+
 
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
@@ -78,7 +80,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq (large) {
 
       // add grid gutter
       margin-left: 10px;

@@ -238,7 +238,8 @@ a {
     flex-basis: 100%;
   }
 }
-.grid__col--7.centered {
+
+.centered {
   margin: 0 auto;
 }
 

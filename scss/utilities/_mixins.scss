@@ -14,6 +14,22 @@
 
 // Media Queries
 
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+  @else {
+    @error "Whoops! No value could be retrieved for `#{$break}`."
+  }
+}
+
 //Flexbox Settings
 
 @mixin flex-container ($dir) {

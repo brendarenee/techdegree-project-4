@@ -8,14 +8,14 @@
   margin-bottom: 20px;
 
   &:not(:last-child) {
-    @media (min-width: 768px) {
+    @include mq (large){
       margin-right: 3%;
     }
   }
 }
 
 .grid__col--12 {
-  @media (min-width: 768px) {
+  @include mq (large) {
     @include flex-container(row);
     justify-content: space-around;
   }
