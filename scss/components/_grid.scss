@@ -69,8 +69,11 @@
   }
 }
 
+
 .centered {
-  margin: 0 auto;
+  @include mq (large) {
+    margin: 0 auto;
+  }
 }
 
 

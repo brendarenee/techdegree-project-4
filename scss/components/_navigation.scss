@@ -1,13 +1,13 @@
 .nav__item {
   @extend %nav-style;
 
-  @media (min-width: 768px) {
+  @include mq(large){
     flex: 1 0;
   }
 }
 
 .nav {
-  @media (min-width: 768px) {
+  @include mq(large){
     @include flex-container(row);
     margin-left: 10%;
   }
